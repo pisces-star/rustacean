@@ -2,7 +2,7 @@ use std::fmt;
 use std::fmt::{Formatter, Display};
 use std::f32::consts::PI;
 
-fn by_example(){
+pub fn by_example(){
     println!("Hello, world!");
     println!("I'm a Rustacean!");
     let x = 5 + 90 + 5;
