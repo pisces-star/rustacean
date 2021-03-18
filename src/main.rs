@@ -4,6 +4,7 @@ mod primitives;
 mod custom_types;
 mod variable_bindings;
 mod types;
+mod conversion;
 
 fn main() {
     // guessing_game::guessing_game();
@@ -11,7 +12,8 @@ fn main() {
     // primitives::primitive();
     // custom_types::custom_types();
     // variable_bindings::variable_bindings();
-    types::types();
+    // types::types();
+    conversion::conversion();
 }
 
 

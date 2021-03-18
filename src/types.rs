@@ -19,4 +19,10 @@ pub fn types(){
         // nan as u8 is 0
         println!("nan as u8 is {}", f32::NAN.to_int_unchecked::<u8>());
     }
+
+    let elem = 5u8;
+    let mut vec = Vec::new();
+    vec.push(elem);
+
+    println!("{:?}", vec);
 }
