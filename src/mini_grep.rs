@@ -76,7 +76,7 @@ impl Config {
 
 #[cfg(test)]
 mod tests {
-    use crate::minigrep::search_case_insensitive;
+    use crate::mini_grep::search_case_insensitive;
 
     #[test]
     fn case_sensitive() {
