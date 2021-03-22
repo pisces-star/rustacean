@@ -33,7 +33,7 @@ pub fn primitive() {
     println!("borrow the whole array as a slice");
     analyze_slice(&xs);
     println!("borrow a section of the array as a slice");
-    analyze_slice(&ys[1 .. 4]);
+    analyze_slice(&ys[1..4]);
 }
 
 fn reverse(pair: (i32, bool)) -> (bool, i32) {
@@ -47,8 +47,7 @@ struct Matrix(f32, f32, f32, f32);
 
 impl fmt::Display for Matrix {
     fn fmt(&self, f: &mut Formatter) -> fmt::Result {
-        writeln!(f, "({} {})", self.0, self.1);
-        writeln!(f, "({} {})", self.2, self.3)
+        writeln!(f, "({} {})\n({} {})", self.0, self.1, self.2, self.3)
     }
 }
 

@@ -5,6 +5,8 @@ mod custom_types;
 mod variable_bindings;
 mod types;
 mod conversion;
+mod flow_of_control;
+mod minigrep;
 
 fn main() {
     // guessing_game::guessing_game();
@@ -13,7 +15,8 @@ fn main() {
     // custom_types::custom_types();
     // variable_bindings::variable_bindings();
     // types::types();
-    conversion::conversion();
+    // conversion::conversion();
+    minigrep::min_grep();
 }
 
 
