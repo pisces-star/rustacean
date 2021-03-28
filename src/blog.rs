@@ -1,4 +1,8 @@
-pub fn blog() {}
+pub fn blog() {
+    let mut post = Post::new();
+    post.add_text("i ate a salad for lunch today");
+    assert_eq!("",post.content)
+}
 
 struct Post {
     state: Option<Box<dyn State>>,
@@ -35,9 +39,9 @@ impl Post {
 }
 
 trait State {
-    fn request_review(self: Box<self>) -> Box<dyn State>;
+    fn request_review(self: Box<Self>) -> Box<dyn State>;
 
-    fn approve(self: Box<self>) -> Box<dyn State>;
+    fn approve(self: Box<Self>) -> Box<dyn State>;
 
     fn content<'a>(&self, post: &'a Post) -> &'a str {
         ""
@@ -65,17 +69,17 @@ impl State for PendingReview {
         self
     }
 
-    fn approve(self: Box<self>) -> Box<dyn State> {
+    fn approve(self: Box<Self>) -> Box<dyn State> {
         Box::new(Published {})
     }
 }
 
 impl State for Published {
-    fn request_review(self: Box<self>) -> Box<dyn State> {
+    fn request_review(self: Box<Self>) -> Box<dyn State> {
         self
     }
 
-    fn approve(self: Box<self>) -> Box<dyn State> {
+    fn approve(self: Box<Self>) -> Box<dyn State> {
         self
     }
 

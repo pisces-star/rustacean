@@ -19,6 +19,7 @@ fn main() {
     // types::types();
     // conversion::conversion();
     // mini_grep::min_grep();
+    blog::blog();
 }
 
 
