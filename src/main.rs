@@ -10,6 +10,7 @@ mod mini_grep;
 mod blog;
 mod expressions;
 mod web;
+mod functions;
 
 fn main() {
     // guessing_game::guessing_game();
@@ -22,7 +23,8 @@ fn main() {
     // mini_grep::min_grep();
     // blog::blog();
     // web::web();
-    flow_of_control::flow_of_control();
+    // flow_of_control::flow_of_control()
+    functions::functions();
 }
 
 
